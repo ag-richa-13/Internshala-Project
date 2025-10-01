@@ -1,0 +1,1075 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  /* Ensure responsiveness is handled by inner elements */
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* --- Navigation (Header) Styles --- */
+
+.frame .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  position: relative; /* Changed from absolute to relative for correct flow */
+  background-color: #ffffff;
+  z-index: 1000; /* Ensure header is always on top */
+}
+
+.frame .div-9 {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.frame .group-4 {
+  position: relative;
+  width: 231.17px;
+  height: 58px;
+  aspect-ratio: 3.99;
+}
+
+.frame .div-5 {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .nav-links {
+  gap: 10px; /* Tighter gap for navigation links */
+}
+
+.frame .div-10 {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--typography-18-medium-font-family);
+  font-weight: var(--typography-18-medium-font-weight);
+  color: #282828;
+  font-size: var(--typography-18-medium-font-size);
+  letter-spacing: var(--typography-18-medium-letter-spacing);
+  line-height: var(--typography-18-medium-line-height);
+  font-style: var(--typography-18-medium-font-style);
+}
+
+.frame .buttons-2 {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colorpalletprimaryprimary-500);
+  border-radius: 30px;
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+}
+
+.frame .text-wrapper-2 {
+  color: #fa1239;
+  line-height: 85px;
+}
+
+/* Hide hamburger menu by default */
+.frame .hamburger {
+  display: none;
+  all: unset;
+  cursor: pointer;
+  padding: 10px;
+}
+.frame .hamburger-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #000000;
+  position: relative;
+}
+.frame .hamburger-icon::before,
+.frame .hamburger-icon::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+.frame .hamburger-icon::before {
+  top: -8px;
+}
+.frame .hamburger-icon::after {
+  top: 8px;
+}
+
+/* --- Hero Section Styles --- */
+
+.frame .hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 909px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.frame .div {
+  overflow: hidden;
+  background: linear-gradient(
+    261deg,
+    rgba(255, 231, 235, 1) 0%,
+    rgba(255, 191, 202, 1) 100%
+  );
+  height: 909px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  display: flex; /* Make it a flex container for responsiveness */
+}
+
+/* Hero Right (Image and Stat Cards) - The container for girl image, ellipses, and two white stat cards */
+.frame .group {
+  position: absolute;
+  top: 190px;
+  left: 766px;
+  width: 634px;
+  height: 727px;
+  z-index: 1; /* Ensure this is layered correctly */
+}
+
+.frame .group-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 634px;
+  height: 727px;
+}
+
+.frame .ellipse {
+  top: 93px;
+  left: 1px;
+  width: 634px;
+  height: 634px;
+  border-radius: 316.94px;
+  background: radial-gradient(
+    50% 50% at 55% 50%,
+    rgba(255, 228, 233, 1) 0%,
+    rgba(255, 203, 212, 1) 100%
+  );
+  position: absolute;
+  aspect-ratio: 1;
+}
+
+.frame .ellipse-2 {
+  top: 172px;
+  left: 79px;
+  width: 476px;
+  height: 476px;
+  border-radius: 238.22px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(254, 205, 213, 1) 0%,
+    rgba(255, 226, 231, 1) 100%
+  );
+  position: absolute;
+  aspect-ratio: 1;
+}
+
+.frame .portrait-happy-young {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: 506px;
+  height: 719px;
+  aspect-ratio: 0.7;
+}
+
+/* 260+ Resumes Created Stat Card */
+.frame .div-2 {
+  display: flex;
+  width: 271px;
+  height: 133px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  position: absolute;
+  top: 544px;
+  left: 363px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  z-index: 2; /* Layer on top of the image */
+}
+
+.frame .mask-group {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: -3.29px;
+  margin-bottom: -3.29px;
+  margin-left: -6.67px;
+}
+
+.frame .div-3 {
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  align-items: flex-start;
+  position: relative;
+  margin-top: -1.29px;
+  margin-bottom: -1.29px;
+  margin-right: -6.67px;
+}
+
+.frame .text-wrapper {
+  align-self: stretch;
+  font-family: "Figtree-ExtraBold", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 30px;
+  position: relative;
+  margin-top: -1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .online-resume {
+  position: relative;
+  align-self: stretch;
+  font-family: "Figtree-Medium", Helvetica;
+  font-weight: 500;
+  color: #666666;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Hero Left (Text and Buttons) */
+.frame .div-4 {
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  align-items: flex-start;
+  gap: 38px;
+  position: absolute;
+  top: 228px;
+  left: 100px;
+  z-index: 3; /* Ensure text is readable */
+}
+
+.frame .your-resume-deserves {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Figtree-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--colorpalletneutralneutral-500);
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.frame .span {
+  color: #000000;
+  line-height: 78px;
+}
+
+.frame .text-wrapper-3 {
+  color: #000000;
+  line-height: 85px;
+}
+
+.frame .if-your-resume-isn-t {
+  position: relative;
+  width: 485px;
+  font-family: "Figtree-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colorpalletneutralneutral-500);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 34px;
+}
+
+.frame .hero-buttons {
+  gap: 24px;
+}
+
+.frame .buttons {
+  display: inline-flex;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: var(--colorpalletprimaryprimary-500);
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.frame .contact {
+  position: relative;
+  width: fit-content;
+  margin-top: -3px;
+  margin-bottom: -1px;
+  font-family: "Figtree-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--colorpalletprimaryprimary-500);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .contact-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--colorpalletprimaryprimary-500);
+  border-radius: 30px;
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+}
+
+.frame .contact-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -3px;
+  margin-bottom: -1px;
+  font-family: "Figtree-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Decorative lines */
+.frame .group-3 {
+  position: absolute;
+  top: 153px;
+  left: 0;
+  width: 363px;
+  height: 17px;
+}
+
+.frame .vector {
+  position: absolute;
+  top: -1px;
+  left: 48px;
+  width: 269px;
+  height: 9px;
+}
+
+.frame .img {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 363px;
+  height: 12px;
+}
+
+/* 4.9 Rating Card */
+.frame .div-6 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 15px;
+  position: absolute;
+  top: 585px;
+  left: 729px;
+  background-color: #ffffffc9;
+  border-radius: 10px;
+  backdrop-filter: blur(45.5px) brightness(100%);
+  -webkit-backdrop-filter: blur(45.5px) brightness(100%);
+  z-index: 2; /* Layer on top of the image */
+}
+
+.frame .text-wrapper-4 {
+  width: fit-content;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #1cb098;
+  font-size: 64px;
+  position: relative;
+  margin-top: -1px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .div-7 {
+  display: flex;
+  flex-direction: column;
+  width: 199px;
+  align-items: flex-start;
+  gap: 11px;
+  position: relative;
+}
+
+.frame .div-8 {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .vector-2 {
+  position: relative;
+  width: 17.12px;
+  height: 16.35px;
+}
+
+.frame .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Figtree-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* --- Services Section Styles --- */
+
+.frame .div-11 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: auto; /* Changed to auto for responsive content */
+  padding-bottom: 100px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.frame .group-5 {
+  position: absolute;
+  top: -74px;
+  left: -1px;
+  width: 1442px;
+  height: 862px;
+  background-color: #ffffffcc; /* This seems to be a white overlay, kept for design integrity */
+  z-index: 0;
+}
+
+.frame .div-12 {
+  display: flex;
+  flex-direction: column;
+  width: 1255px;
+  max-width: 100%;
+  align-items: flex-start;
+  gap: 50px;
+  position: relative; /* Changed from absolute to relative for flow */
+  margin: 50px auto 0; /* Center content and provide top margin */
+  padding: 0 20px; /* Add horizontal padding for smaller screens */
+  box-sizing: border-box;
+}
+
+.frame .div-13 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .what-you-get {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Figtree-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+  /* Add background/padding to match the image's "chip" style */
+  background-color: #fd92a44c;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.frame .you-re-not-just {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--typography-h4-26-semibold-font-family);
+  font-weight: var(--typography-h4-26-semibold-font-weight);
+  color: #000000;
+  font-size: var(--typography-h4-26-semibold-font-size);
+  text-align: center;
+  letter-spacing: var(--typography-h4-26-semibold-letter-spacing);
+  line-height: var(--typography-h4-26-semibold-line-height);
+  font-style: var(--typography-h4-26-semibold-font-style);
+}
+
+.frame .div-14 {
+  display: flex;
+  align-items: stretch; /* Ensures cards have equal height */
+  gap: 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-15 {
+  display: flex;
+  flex-direction: column;
+  /* height: 450px; Remove fixed height */
+  min-height: 450px;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 20px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 16px #00000014;
+}
+
+.frame .div-16 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .CMS {
+  position: relative;
+  width: 100%; /* Make image fluid within its container */
+  max-width: 300px;
+  height: auto; /* Height auto for responsiveness */
+  aspect-ratio: 1.5;
+  object-fit: contain;
+  margin: 0; /* Reset margins */
+}
+
+.frame .p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: var(--typography-20-medium-font-family);
+  font-weight: var(--typography-20-medium-font-weight);
+  color: var(--colorpalletneutralneutral-500);
+  font-size: var(--typography-20-medium-font-size);
+  letter-spacing: var(--typography-20-medium-letter-spacing);
+  line-height: var(--typography-20-medium-line-height);
+  font-style: var(--typography-20-medium-font-style);
+  text-align: center;
+}
+
+.frame .text-wrapper-7 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  font-family: "Figtree-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--colorpalletneutralneutral-500);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.frame .div-wrapper-3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-8 {
+  flex: 1;
+  height: auto; /* Changed from fixed height */
+  min-height: 48px;
+  margin-top: -1px;
+  font-family: var(--typography-20-medium-font-family);
+  font-weight: var(--typography-20-medium-font-weight);
+  font-size: var(--typography-20-medium-font-size);
+  line-height: var(--typography-20-medium-line-height);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--colorpalletneutralneutral-500);
+  letter-spacing: var(--typography-20-medium-letter-spacing);
+  font-style: var(--typography-20-medium-font-style);
+  text-align: center;
+}
+/* Original CSS code injected here (but most of it has been updated/moved) */
+
+/* Additional semantic and accessibility improvements */
+.frame .div-5[role="menubar"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.frame .div-10[role="none"] {
+  list-style: none;
+}
+
+.frame .div-wrapper[role="menuitem"] {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper[role="menuitem"]:hover {
+  opacity: 0.8;
+}
+
+.frame .div-wrapper[role="menuitem"]:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.frame .buttons[role="button"]:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.frame .buttons[role="button"]:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.frame .contact-wrapper:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.frame .buttons-2:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Improved focus states for better accessibility */
+.frame .contact-wrapper:focus,
+.frame .buttons-2:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+/* Ensure proper heading hierarchy styling */
+.frame .your-resume-deserves {
+  margin: 0;
+}
+
+.frame .what-you-get {
+  margin: 0;
+}
+
+.frame .p {
+  margin: 0;
+}
+
+.frame .text-wrapper-8 {
+  margin: 0;
+}
+
+/* ---------------------------------- */
+/* RESPONSIVE STYLES         */
+/* ---------------------------------- */
+
+/* --- Tablet / Small Desktop (Max 1280px) --- */
+@media (max-width: 1280px) {
+  /* Navigation */
+  .frame .div-9 {
+    padding: 0px 50px;
+  }
+
+  /* Hero Section */
+  .frame .hero-section {
+    height: 750px;
+  }
+  .frame .div {
+    height: 750px;
+  }
+  .frame .div-4 {
+    top: 150px;
+    left: 50px;
+    width: 500px;
+    gap: 25px;
+  }
+  .frame .your-resume-deserves {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .frame .span {
+    line-height: 60px;
+  }
+  .frame .text-wrapper-2,
+  .frame .text-wrapper-3 {
+    line-height: 65px;
+  }
+  .frame .if-your-resume-isn-t {
+    width: 450px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  /* Hero Image and Ellipses Container */
+  .frame .group {
+    top: 100px;
+    left: 550px;
+    width: 600px;
+    height: 600px;
+    transform: scale(0.85); /* Shrink the whole group */
+    transform-origin: top left;
+  }
+
+  /* Stat Cards adjustments due to scale */
+  .frame .div-2 {
+    top: 544px;
+    left: 363px;
+  }
+  .frame .div-6 {
+    top: 585px;
+    left: 729px;
+  }
+
+  /* Services Section */
+  .frame .div-12 {
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+
+/* --- Mobile / Tablet (Max 1024px) --- */
+@media (max-width: 1024px) {
+  /* Navigation */
+  .frame .div-9 {
+    padding: 0px 30px;
+  }
+  .frame .group-4 {
+    width: 180px;
+    height: 45px;
+  }
+  .frame .nav-links {
+    gap: 5px;
+  }
+
+  /* Hero Section */
+  .frame .hero-section {
+    height: 650px;
+  }
+  .frame .div {
+    height: 650px;
+  }
+  .frame .div-4 {
+    top: 120px;
+    left: 30px;
+    width: 450px;
+    gap: 20px;
+  }
+  .frame .your-resume-deserves {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .frame .span {
+    line-height: 55px;
+  }
+  .frame .text-wrapper-2,
+  .frame .text-wrapper-3 {
+    line-height: 60px;
+  }
+  .frame .if-your-resume-isn-t {
+    width: 100%;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .frame .hero-buttons {
+    flex-wrap: wrap; /* Allow buttons to stack if needed */
+  }
+
+  /* Hero Image and Stat Cards Container */
+  .frame .group {
+    top: 100px;
+    left: 500px;
+    width: 500px;
+    height: 500px;
+    transform: scale(0.75);
+  }
+
+  /* Stat Cards: move them closer and scale slightly */
+  .frame .div-2 {
+    top: 450px;
+    left: 300px;
+    transform: scale(0.85);
+    transform-origin: bottom right;
+  }
+  .frame .div-6 {
+    top: 500px;
+    left: 600px;
+    transform: scale(0.85);
+    transform-origin: top left;
+  }
+
+  /* Services Section */
+  .frame .div-12 {
+    gap: 30px;
+  }
+  .frame .div-14 {
+    gap: 15px;
+  }
+  .frame .div-15 {
+    min-height: 400px;
+  }
+  .frame .you-re-not-just {
+    font-size: 22px;
+  }
+  .frame .p,
+  .frame .text-wrapper-8 {
+    font-size: 18px;
+  }
+  .frame .text-wrapper-7 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* --- Mobile (Max 767px) --- */
+@media (max-width: 767px) {
+  /* Navigation */
+  .frame .div-9 {
+    height: 80px;
+    padding: 0 20px;
+  }
+  .frame .nav-links,
+  .frame .nav-quote-btn {
+    display: none; /* Hide desktop navigation links and quote button */
+  }
+  .frame .hamburger {
+    display: block; /* Show hamburger menu */
+  }
+
+  /* Hero Section: Switch to a stacked, fluid layout */
+  .frame .hero-section {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .frame .div {
+    height: auto;
+    min-height: 600px;
+    display: block; /* Change back to block for stacked layout */
+  }
+
+  /* Hero Content (Text and Buttons) */
+  .frame .div-4 {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 500px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .frame .your-resume-deserves {
+    font-size: 38px;
+    line-height: 44px;
+    text-align: center;
+  }
+  .frame .span {
+    line-height: 48px;
+  }
+  .frame .text-wrapper-2,
+  .frame .text-wrapper-3 {
+    line-height: 50px;
+  }
+  .frame .if-your-resume-isn-t {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .frame .hero-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    width: 100%;
+  }
+  .frame .buttons,
+  .frame .contact-wrapper {
+    width: 100%;
+    max-width: 300px; /* Optional: limit button width */
+  }
+
+  /* Decorative lines - hide or adjust for cleaner mobile look */
+  .frame .group-3 {
+    display: none;
+  }
+
+  /* Hero Image and Stat Cards Container - Positioned below text */
+  .frame .group {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.6); /* Scale down for mobile */
+    transform-origin: top center;
+    margin-top: 50px;
+    height: 400px; /* Adjusted height for scaled image */
+  }
+  .frame .portrait-happy-young {
+    left: 0;
+    transform: translateX(0);
+    width: 100%;
+    height: auto;
+  }
+  .frame .ellipse,
+  .frame .ellipse-2 {
+    display: none; /* Hide large circles for cleaner mobile background */
+  }
+  .frame .div-2,
+  .frame .div-6 {
+    /* Reposition stat cards to be more centered/logical */
+    position: absolute;
+    top: 50px; /* Adjust relative to new 'group' position */
+    left: -50px;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+  .frame .div-6 {
+    top: 150px;
+    left: 150px;
+  }
+
+  /* Services Section */
+  .frame .div-12 {
+    padding: 0 10px;
+    width: 100%;
+  }
+  .frame .div-14 {
+    flex-direction: column; /* Stack service cards vertically */
+    gap: 30px;
+  }
+  .frame .div-15 {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+  .frame .CMS {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .frame .text-wrapper-7 {
+    font-size: 15px;
+  }
+}
+
+/* --- Extra Small Mobile (Max 480px) --- */
+@media (max-width: 480px) {
+  .frame .div-4 {
+    top: 30px;
+  }
+  .frame .your-resume-deserves {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .frame .span,
+  .frame .text-wrapper-2,
+  .frame .text-wrapper-3 {
+    line-height: 40px;
+  }
+  .frame .if-your-resume-isn-t {
+    font-size: 13px;
+  }
+
+  /* Image and Stat Cards container */
+  .frame .group {
+    margin-top: 20px;
+    transform: translateX(-50%) scale(0.5); /* Smaller scale for tiny screens */
+  }
+  .frame .div-2 {
+    transform: scale(0.7);
+  }
+  .frame .div-6 {
+    transform: scale(0.7);
+    left: 100px;
+  }
+}
