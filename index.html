@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <main class="frame">
       <header class="frame-wrapper">
         <nav class="div-9" role="navigation" aria-label="Main navigation">
           <img class="group-4" src="./Image/logo.png" alt="Company logo" />
 
-          <ul class="div-5 nav-links" role="menubar">
+          <ul class="div-5 nav-links" id="main-navigation" role="menubar">
             <li class="div-10" role="none">
               <a href="#home" class="div-wrapper" role="menuitem">
                 <span class="text-wrapper-6">Home</span>
@@ -56,6 +55,7 @@
               <span class="contact-2">Get A Quote</span>
             </button>
           </div>
+
           <button
             class="hamburger"
             aria-expanded="false"
@@ -72,7 +72,9 @@
           <div class="div-4">
             <h1 class="your-resume-deserves">
               <span class="span">Your Resume </span>
-              <span class="text-wrapper-2">Deserves A Yes</span>
+              <span class="text-wrapper-2 curved-underline"
+                >Deserves A Yes</span
+              >
               <span class="text-wrapper-3"> Let's Make It Happen</span>
             </h1>
 
@@ -92,7 +94,6 @@
               >
                 <span class="contact">RESUME PACKAGES</span>
               </a>
-
               <button
                 class="contact-wrapper"
                 type="button"
@@ -130,19 +131,19 @@
                 <div class="online-resume">Online Resumes Created</div>
               </div>
             </div>
-          </div>
 
-          <div class="div-6">
-            <div class="text-wrapper-4">4.9</div>
-            <div class="div-7">
-              <div class="div-8" role="img" aria-label="5 star rating">
-                <img class="vector-2" src="./Image/star.png" alt="star" />
-                <img class="vector-2" src="./Image/star.png" alt="star" />
-                <img class="vector-2" src="./Image/star.png" alt="star" />
-                <img class="vector-2" src="./Image/star.png" alt="star" />
-                <img class="vector-2" src="./Image/star.png" alt="star" />
+            <div class="div-6">
+              <div class="text-wrapper-4">4.9</div>
+              <div class="div-7">
+                <div class="div-8" role="img" aria-label="5 star rating">
+                  <img class="vector-2" src="./Image/star.png" alt="star" />
+                  <img class="vector-2" src="./Image/star.png" alt="star" />
+                  <img class="vector-2" src="./Image/star.png" alt="star" />
+                  <img class="vector-2" src="./Image/star.png" alt="star" />
+                  <img class="vector-2" src="./Image/star.png" alt="star" />
+                </div>
+                <div class="text-wrapper-5">Instructor Rating</div>
               </div>
-              <div class="text-wrapper-5">Instructor Rating</div>
             </div>
           </div>
         </div>
@@ -228,6 +229,20 @@
           </div>
         </div>
       </section>
+
+      <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+          const expanded =
+            hamburger.getAttribute("aria-expanded") === "true" || false;
+          hamburger.setAttribute("aria-expanded", !expanded);
+          navLinks.classList.toggle("nav-active");
+          hamburger.classList.toggle("toggle");
+        });
+      </script>
     </main>
   </body>
 </html>
