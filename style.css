@@ -1,4 +1,8 @@
-/* ================================== */ /* 1. GLOBAL / BASE STYLES */ /* ================================== */ /* --- Base Container & Layout --- */
+/* ================================== */
+/* 1. GLOBAL / BASE STYLES */
+/* ================================== */
+
+/* --- Base Container & Layout --- */
 .frame {
   display: flex;
   flex-direction: column;
@@ -6,7 +10,9 @@
   position: relative;
   width: 100%;
   overflow-x: hidden;
-} /* --- Semantic & Accessibility Improvements (ARIA Roles) --- */
+}
+
+/* --- Semantic & Accessibility Improvements (ARIA Roles) --- */
 .frame .div-5[role="menubar"] {
   list-style: none;
   margin: 0;
@@ -24,7 +30,9 @@
   gap: 10px;
   position: relative;
   flex: 0 0 auto;
-} /* --- Interactive States (Hover/Focus) --- */
+}
+
+/* --- Interactive States (Hover/Focus) --- */
 .frame .div-wrapper[role="menuitem"]:hover {
   opacity: 0.8;
 }
@@ -47,36 +55,46 @@
 .frame .buttons-2:hover {
   opacity: 0.9;
   transform: translateY(-1px);
-} /* Improved focus states for better accessibility */
+}
+/* Improved focus states for better accessibility */
 .frame .contact-wrapper:focus,
 .frame .buttons-2:focus {
   outline: 2px solid #4a90e2;
   outline-offset: 2px;
-} /* --- Heading and Paragraph Reset --- */ /* Ensure proper heading hierarchy styling */
-.frame .your-resume-deserves {
-  margin: 0;
 }
-.frame .what-you-get {
-  margin: 0;
-}
-.frame .p {
-  margin: 0;
-}
+
+/* --- Heading and Paragraph Reset --- */
+.frame .your-resume-deserves,
+.frame .what-you-get,
+.frame .p,
 .frame .text-wrapper-8 {
   margin: 0;
-} /* ================================== */ /* 2. TYPOGRAPHY & UTILITY STYLES */ /* ================================== */ /* --- General Text Wrappers --- */
+}
+
+/* ================================== */
+/* 2. TYPOGRAPHY & UTILITY STYLES */
+/* ================================== */
+
+/* --- General Text Wrappers --- */
 .frame .text-wrapper-6 {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: var(--typography-18-medium-font-family);
-  font-weight: var(--typography-18-medium-font-weight);
+  /* Assuming var(--typography-18-medium-...) is defined elsewhere, using placeholders for clarity */
+  font-family: var(
+    --typography-18-medium-font-family,
+    "Figtree-Medium",
+    Helvetica
+  );
+  font-weight: var(--typography-18-medium-font-weight, 500);
   color: #282828;
-  font-size: var(--typography-18-medium-font-size);
-  letter-spacing: var(--typography-18-medium-letter-spacing);
-  line-height: var(--typography-18-medium-line-height);
-  font-style: var(--typography-18-medium-font-style);
-} /* Hero Title Spans */
+  font-size: var(--typography-18-medium-font-size, 18px);
+  letter-spacing: var(--typography-18-medium-letter-spacing, 0);
+  line-height: var(--typography-18-medium-line-height, normal);
+  font-style: var(--typography-18-medium-font-style, normal);
+}
+
+/* Hero Title Spans */
 .frame .span {
   color: #000000;
   line-height: 78px;
@@ -88,7 +106,9 @@
 .frame .text-wrapper-3 {
   color: #000000;
   line-height: 85px;
-} /* Smaller/Sub Headings */
+}
+
+/* Smaller/Sub Headings */
 .frame .text-wrapper {
   align-self: stretch;
   font-family: "Figtree-ExtraBold", Helvetica;
@@ -119,7 +139,9 @@
   font-size: 24px;
   letter-spacing: 0;
   line-height: normal;
-} /* Stat Card Typography */
+}
+
+/* Stat Card Typography */
 .frame .text-wrapper-4 {
   width: fit-content;
   font-family: "Inter-SemiBold", Helvetica;
@@ -130,20 +152,27 @@
   margin-top: -1px;
   letter-spacing: 0;
   line-height: normal;
-} /* Services Section Paragraph/Content */
+}
+
+/* Services Section Paragraph/Content */
 .frame .p {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   align-self: stretch;
-  font-family: var(--typography-20-medium-font-family);
-  font-weight: var(--typography-20-medium-font-weight);
-  color: var(--colorpalletneutralneutral-500);
-  font-size: var(--typography-20-medium-font-size);
-  letter-spacing: var(--typography-20-medium-letter-spacing);
-  line-height: var(--typography-20-medium-line-height);
-  font-style: var(--typography-20-medium-font-style);
+  /* Assuming color and font vars are defined, using fallbacks */
+  font-family: var(
+    --typography-20-medium-font-family,
+    "Figtree-Medium",
+    Helvetica
+  );
+  font-weight: var(--typography-20-medium-font-weight, 500);
+  color: var(--colorpalletneutralneutral-500, #666666);
+  font-size: var(--typography-20-medium-font-size, 20px);
+  letter-spacing: var(--typography-20-medium-letter-spacing, 0);
+  line-height: var(--typography-20-medium-line-height, 30px);
+  font-style: var(--typography-20-medium-font-style, normal);
   text-align: center;
 }
 .frame .text-wrapper-7 {
@@ -154,7 +183,7 @@
   align-self: stretch;
   font-family: "Figtree-Regular", Helvetica;
   font-weight: 400;
-  color: var(--colorpalletneutralneutral-500);
+  color: var(--colorpalletneutralneutral-500, #666666);
   font-size: 18px;
   letter-spacing: 0;
   line-height: 30px;
@@ -165,19 +194,26 @@
   height: auto;
   min-height: 48px;
   margin-top: -1px;
-  font-family: var(--typography-20-medium-font-family);
-  font-weight: var(--typography-20-medium-font-weight);
-  font-size: var(--typography-20-medium-font-size);
-  line-height: var(--typography-20-medium-line-height);
+  /* Assuming color and font vars are defined, using fallbacks */
+  font-family: var(
+    --typography-20-medium-font-family,
+    "Figtree-Medium",
+    Helvetica
+  );
+  font-weight: var(--typography-20-medium-font-weight, 500);
+  font-size: var(--typography-20-medium-font-size, 20px);
+  line-height: var(--typography-20-medium-line-height, 30px);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--colorpalletneutralneutral-500);
-  letter-spacing: var(--typography-20-medium-letter-spacing);
-  font-style: var(--typography-20-medium-font-style);
+  color: var(--colorpalletneutralneutral-500, #666666);
+  letter-spacing: var(--typography-20-medium-letter-spacing, 0);
+  font-style: var(--typography-20-medium-font-style, normal);
   text-align: center;
-} /* --- Utility: Curved Underline --- */
+}
+
+/* --- Utility: Curved Underline --- */
 .frame .curved-underline {
   position: relative;
   display: inline-block;
@@ -192,17 +228,25 @@
   border-radius: 50%;
   border-top: 3px solid #fa1239;
   box-sizing: border-box;
-} /* First Curved Line (::before) */
+}
+/* First Curved Line (::before) */
 .frame .curved-underline::before {
   bottom: 10px; /* Text se thoda niche */
   width: 80%; /* First line chhoti */
   height: 40px;
-} /* Second Curved Line (::after) */
+}
+/* Second Curved Line (::after) */
 .frame .curved-underline::after {
   bottom: -18px; /* Pehle wale se aur niche */
   width: 100%; /* Second line badi */
   height: 60px;
-} /* ================================== */ /* 3. HEADER (NAVIGATION) STYLES */ /* ================================== */ /* --- Fixed Header Container --- */
+}
+
+/* ================================== */
+/* 3. HEADER (NAVIGATION) STYLES */
+/* ================================== */
+
+/* --- Fixed Header Container --- */
 .frame .frame-wrapper {
   display: flex;
   flex-direction: column;
@@ -224,13 +268,18 @@
   position: relative;
   align-self: stretch;
   width: 100%;
-} /* --- Logo --- */
+  box-sizing: border-box; /* Added for correct padding behavior */
+}
+
+/* --- Logo --- */
 .frame .group-4 {
   position: relative;
   width: 231.17px;
   height: 58px;
   aspect-ratio: 3.99;
-} /* --- Navigation Links and Button Container --- */
+}
+
+/* --- Navigation Links and Button Container --- */
 .frame .div-5 {
   display: inline-flex;
   align-items: center;
@@ -249,14 +298,8 @@
   position: relative;
   flex: 0 0 auto;
 }
-.frame .div-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: relative;
-  flex: 0 0 auto;
-} /* --- Navigation Button (Secondary) --- */
+
+/* --- Navigation Button (Secondary) --- */
 .frame .buttons-2 {
   all: unset;
   box-sizing: border-box;
@@ -268,16 +311,25 @@
   padding: 14px 22px;
   position: relative;
   flex: 0 0 auto;
-  background-color: var(--colorpalletprimaryprimary-500);
+  background-color: var(
+    --colorpalletprimaryprimary-500,
+    #fa1239
+  ); /* Fallback color */
   border-radius: 30px;
-  box-shadow: var(--button-shadow);
+  box-shadow: var(
+    --button-shadow,
+    0 4px 6px rgba(0, 0, 0, 0.1)
+  ); /* Fallback shadow */
   cursor: pointer;
-} /* --- Hamburger Menu (Hidden by default) --- */
+}
+
+/* --- Hamburger Menu (Hidden by default) --- */
 .frame .hamburger {
   display: none;
   all: unset;
   cursor: pointer;
   padding: 10px;
+  box-sizing: content-box; /* Ensure padding doesn't affect icon size */
 }
 .frame .hamburger-icon {
   display: block;
@@ -303,7 +355,13 @@
 }
 .frame .hamburger-icon::after {
   top: 8px;
-} /* ================================== */ /* 4. HERO SECTION STYLES */ /* ================================== */ /* --- Hero Section Container & Background --- */
+}
+
+/* ================================== */
+/* 4. HERO SECTION STYLES */
+/* ================================== */
+
+/* --- Hero Section Container & Background --- */
 .frame .hero-section {
   display: flex;
   flex-direction: column;
@@ -312,6 +370,8 @@
   position: relative;
   align-self: stretch;
   width: 100%;
+  padding-top: 100px; /* To account for fixed header height (100px) */
+  box-sizing: border-box;
 }
 .frame .div {
   overflow: hidden;
@@ -320,12 +380,14 @@
     rgba(255, 231, 235, 1) 0%,
     rgba(255, 191, 202, 1) 100%
   );
-  height: 909px;
+  height: 809px; /* 909px - 100px header padding */
   position: relative;
   align-self: stretch;
   width: 100%;
-  display: flex; /* Make it a flex container for responsiveness */
-} /* --- Hero Left (Text and Buttons) --- */
+  display: flex;
+}
+
+/* --- Hero Left (Text and Buttons) --- */
 .frame .div-4 {
   display: flex;
   flex-direction: column;
@@ -333,50 +395,64 @@
   align-items: flex-start;
   gap: 38px;
   position: absolute;
-  top: 228px;
+  /* top is relative to the inner .div (809px height) */
+  top: 128px; /* 228px - 100px header padding */
   left: 100px;
-  z-index: 3; /* Ensure text is readable */
-} /* Hero Title */
+  z-index: 3;
+}
+
+/* Hero Title */
 .frame .your-resume-deserves {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
   font-family: "Figtree-Bold", Helvetica;
   font-weight: 700;
-  color: var(--colorpalletneutralneutral-500);
+  color: var(--colorpalletneutralneutral-500, #000000); /* Fallback color */
   font-size: 50px;
   letter-spacing: 0;
   line-height: 64px;
-} /* Hero Subtext */
+}
+
+/* Hero Subtext */
 .frame .if-your-resume-isn-t {
   position: relative;
   width: 485px;
   font-family: "Figtree-Regular", Helvetica;
   font-weight: 400;
-  color: var(--colorpalletneutralneutral-500);
+  color: var(--colorpalletneutralneutral-500, #666666); /* Fallback color */
   font-size: 16px;
   letter-spacing: 0;
   line-height: 34px;
-} /* Hero Buttons Container */
+}
+
+/* Hero Buttons Container */
 .frame .hero-buttons {
+  display: flex;
   gap: 24px;
-} /* Primary Button (White/Bordered) - Height increased to 60px */
+}
+
+/* Primary Button (White/Bordered) - Height increased to 60px */
 .frame .buttons {
   display: inline-flex;
-  height: 60px; /* Increased height */
+  height: 60px;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 18px 22px; /* Adjusted padding for taller button */
+  padding: 18px 22px;
   position: relative;
   flex: 0 0 auto;
   background-color: #ffffff;
   border-radius: 30px;
   border: 1px solid;
-  border-color: var(--colorpalletprimaryprimary-500);
-  box-shadow: var(--button-shadow);
+  border-color: var(
+    --colorpalletprimaryprimary-500,
+    #fa1239
+  ); /* Fallback color */
+  box-shadow: var(--button-shadow, 0 4px 6px rgba(0, 0, 0, 0.1));
   cursor: pointer;
   text-decoration: none;
+  box-sizing: border-box;
 }
 .frame .contact {
   position: relative;
@@ -385,25 +461,30 @@
   margin-bottom: -1px;
   font-family: "Figtree-Medium", Helvetica;
   font-weight: 500;
-  color: var(--colorpalletprimaryprimary-500);
+  color: var(--colorpalletprimaryprimary-500, #fa1239); /* Fallback color */
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
-} /* Secondary Button (Pink/Filled) - Height increased to 60px */
+}
+
+/* Secondary Button (Pink/Filled) - Height increased to 60px */
 .frame .contact-wrapper {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
-  height: 60px; /* Increased height */
+  height: 60px;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 18px 22px; /* Adjusted padding */
+  padding: 18px 22px;
   position: relative;
   flex: 0 0 auto;
-  background-color: var(--colorpalletprimaryprimary-500);
+  background-color: var(
+    --colorpalletprimaryprimary-500,
+    #fa1239
+  ); /* Fallback color */
   border-radius: 30px;
-  box-shadow: var(--button-shadow);
+  box-shadow: var(--button-shadow, 0 4px 6px rgba(0, 0, 0, 0.1));
   cursor: pointer;
 }
 .frame .contact-2 {
@@ -417,10 +498,12 @@
   font-size: 18px;
   letter-spacing: 0;
   line-height: normal;
-} /* Decorative lines */
+}
+
+/* Decorative lines */
 .frame .group-3 {
   position: absolute;
-  top: 153px;
+  top: 53px; /* 153px - 100px header padding */
   left: 0;
   width: 363px;
   height: 17px;
@@ -438,14 +521,17 @@
   left: 0;
   width: 363px;
   height: 12px;
-} /* ... rest of CSS remains unchanged ... */ /* --- Hero Right (Image and Stat Cards) --- */
+}
+
+/* --- Hero Right (Image and Stat Cards) --- */
 .frame .group {
   position: absolute;
-  top: 190px;
+  /* top is relative to the inner .div (809px height) */
+  top: 90px; /* 190px - 100px header padding */
   left: 766px;
   width: 634px;
   height: 727px;
-  z-index: 1; /* Ensure this is layered correctly */
+  z-index: 1;
 }
 .frame .group-2 {
   position: absolute;
@@ -453,7 +539,9 @@
   left: 0;
   width: 634px;
   height: 727px;
-} /* Background Ellipses/Circles */
+}
+
+/* Background Ellipses/Circles */
 .frame .ellipse {
   top: 93px;
   left: 1px;
@@ -463,7 +551,7 @@
   background: radial-gradient(
     50% 50% at 55% 50%,
     rgba(255, 228, 233, 1) 0%,
-    rgba(255, 203, 212, 1) 100%
+    rgba(255, 191, 202, 1) 100%
   );
   position: absolute;
   aspect-ratio: 1;
@@ -481,7 +569,9 @@
   );
   position: absolute;
   aspect-ratio: 1;
-} /* Image */
+}
+
+/* Image */
 .frame .portrait-happy-young {
   position: absolute;
   top: 0;
@@ -489,7 +579,9 @@
   width: 506px;
   height: 719px;
   aspect-ratio: 0.7;
-} /* 260+ Resumes Created Stat Card */
+}
+
+/* 260+ Resumes Created Stat Card */
 .frame .div-2 {
   display: flex;
   width: 271px;
@@ -499,12 +591,12 @@
   gap: 20px;
   padding: 30px;
   position: absolute;
-  /* UPDATED POSITION for 260+ card (right/bottom) */
-  top: 560px; /* Moved slightly down */
-  left: 330px; /* Moved slightly left */
+  top: 560px;
+  left: 330px;
   background-color: #ffffff;
   border-radius: 10px;
-  z-index: 2; /* Layer on top of the image */
+  z-index: 2;
+  box-sizing: border-box; /* Added for correct padding behavior */
 }
 .frame .mask-group {
   position: relative;
@@ -523,7 +615,9 @@
   margin-top: -1.29px;
   margin-bottom: -1.29px;
   margin-right: -6.67px;
-} /* 4.9 Rating Card */
+}
+
+/* 4.9 Rating Card */
 .frame .div-6 {
   display: inline-flex;
   align-items: center;
@@ -531,14 +625,14 @@
   gap: 20px;
   padding: 20px 15px;
   position: absolute;
-  /* UPDATED POSITION for 4.9 card (left/top) */
-  top: 380px; /* Moved up significantly */
-  left: 120px; /* Moved left significantly */
+  top: 380px;
+  left: 120px;
   background-color: #ffffffc9;
   border-radius: 10px;
   backdrop-filter: blur(45.5px) brightness(100%);
   -webkit-backdrop-filter: blur(45.5px) brightness(100%);
-  z-index: 2; /* Layer on top of the image */
+  z-index: 2;
+  box-sizing: border-box; /* Added for correct padding behavior */
 }
 .frame .div-7 {
   display: flex;
@@ -559,25 +653,36 @@
   position: relative;
   width: 17.12px;
   height: 16.35px;
-} /* ================================== */ /* 5. SERVICES SECTION STYLES */ /* ================================== */ /* --- Services Container --- */
+}
+
+/* ================================== */
+/* 5. SERVICES SECTION STYLES */
+/* ================================== */
+
+/* --- Services Container --- */
 .frame .div-11 {
   position: relative;
   align-self: stretch;
   width: 100%;
-  height: auto; /* Changed to auto for responsive content */
+  height: auto;
   padding-bottom: 100px;
   background-color: #ffffff;
   overflow: hidden;
-} /* Decorative Background Group */
+  box-sizing: border-box;
+}
+
+/* Decorative Background Group */
 .frame .group-5 {
   position: absolute;
   top: -74px;
   left: -1px;
   width: 1442px;
   height: 862px;
-  background-color: #ffffffcc; /* This seems to be a white overlay, kept for design integrity */
+  background-color: #ffffffcc;
   z-index: 0;
-} /* Content Wrapper */
+}
+
+/* Content Wrapper */
 .frame .div-12 {
   display: flex;
   flex-direction: column;
@@ -585,11 +690,13 @@
   max-width: 100%;
   align-items: flex-start;
   gap: 50px;
-  position: relative; /* Changed from absolute to relative for flow */
-  margin: 50px auto 0; /* Center content and provide top margin */
-  padding: 0 20px; /* Add horizontal padding for smaller screens */
+  position: relative;
+  margin: 50px auto 0;
+  padding: 0 20px;
   box-sizing: border-box;
-} /* Section Header (Chip & Title) */
+}
+
+/* Section Header (Chip & Title) */
 .frame .div-13 {
   display: flex;
   flex-direction: column;
@@ -622,7 +729,7 @@
   color: #000000;
   font-size: 18px;
   letter-spacing: 0;
-  line-height: normal; /* Add background/padding to match the image's "chip" style */
+  line-height: normal;
   background-color: #fd92a44c;
   border-radius: 6px;
   padding: 10px 20px;
@@ -634,24 +741,33 @@
   justify-content: center;
   align-self: stretch;
   margin-top: -1px;
-  font-family: var(--typography-h4-26-semibold-font-family);
-  font-weight: var(--typography-h4-26-semibold-font-weight);
+  /* Assuming font vars are defined, using fallbacks */
+  font-family: var(
+    --typography-h4-26-semibold-font-family,
+    "Figtree-SemiBold",
+    Helvetica
+  );
+  font-weight: var(--typography-h4-26-semibold-font-weight, 600);
   color: #000000;
-  font-size: var(--typography-h4-26-semibold-font-size);
+  font-size: var(--typography-h4-26-semibold-font-size, 26px);
   text-align: center;
-  letter-spacing: var(--typography-h4-26-semibold-letter-spacing);
-  line-height: var(--typography-h4-26-semibold-line-height);
-  font-style: var(--typography-h4-26-semibold-font-style);
-} /* --- Service Cards Row */
+  letter-spacing: var(--typography-h4-26-semibold-letter-spacing, 0);
+  line-height: var(--typography-h4-26-semibold-line-height, normal);
+  font-style: var(--typography-h4-26-semibold-font-style, normal);
+}
+
+/* --- Service Cards Row */
 .frame .div-14 {
   display: flex;
-  align-items: stretch; /* Ensures cards have equal height */
+  align-items: stretch;
   gap: 20px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-} /* Single Service Card */
+}
+
+/* Single Service Card */
 .frame .div-15 {
   display: flex;
   flex-direction: column;
@@ -665,6 +781,7 @@
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0px 4px 16px #00000014;
+  box-sizing: border-box;
 }
 .frame .div-16 {
   display: flex;
@@ -675,15 +792,17 @@
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-} /* Card Image */
+}
+
+/* Card Image */
 .frame .CMS {
   position: relative;
-  width: 100%; /* Make image fluid within its container */
+  width: 100%;
   max-width: 300px;
-  height: auto; /* Height auto for responsiveness */
+  height: auto;
   aspect-ratio: 1.5;
   object-fit: contain;
-  margin: 0; /* Reset margins */
+  margin: 0;
 }
 .frame .div-wrapper-3 {
   display: flex;
@@ -694,20 +813,28 @@
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-} /* ================================== */ /* 6. RESPONSIVE STYLES */ /* ================================== */ /* --- Tablet / Small Desktop (Max 1280px) --- */
+}
+
+/* ================================== */
+/* 6. RESPONSIVE STYLES */
+/* ================================== */
+
+/* --- Tablet / Small Desktop (Max 1280px) --- */
 @media (max-width: 1280px) {
   /* Navigation */
   .frame .div-9 {
     padding: 0px 50px;
-  } /* Hero Section */
+  }
+
+  /* Hero Section */
   .frame .hero-section {
     height: 750px;
   }
   .frame .div {
-    height: 750px;
+    height: 650px; /* 750px - 100px header padding */
   }
   .frame .div-4 {
-    top: 150px;
+    top: 50px; /* 150px - 100px header padding */
     left: 50px;
     width: 500px;
     gap: 25px;
@@ -727,30 +854,36 @@
     width: 450px;
     font-size: 15px;
     line-height: 28px;
-  } /* Hero Image and Ellipses Container */
+  }
+
+  /* Hero Image and Ellipses Container */
   .frame .group {
-    top: 100px;
+    top: 0px; /* 100px - 100px header padding */
     left: 550px;
     width: 600px;
     height: 600px;
-    transform: scale(0.85); /* Shrink the whole group */
+    transform: scale(0.85);
     transform-origin: top left;
-  } /* Stat Cards adjustments due to scale */
+  }
+
+  /* Stat Cards adjustments due to scale - Keep desktop relative positions */
   .frame .div-2 {
-    /* Adjusted for 1280px scale (0.85) */
-    top: 560px; /* Kept desktop top position */
-    left: 330px; /* Kept desktop left position */
+    top: 560px;
+    left: 330px;
   }
   .frame .div-6 {
-    /* Adjusted for 1280px scale (0.85) */
-    top: 380px; /* Kept desktop top position */
-    left: 120px; /* Kept desktop left position */
-  } /* Services Section */
+    top: 380px;
+    left: 120px;
+  }
+
+  /* Services Section */
   .frame .div-12 {
     width: 90%;
     margin: 50px auto;
   }
-} /* --- Mobile / Tablet (Max 1024px) --- */
+}
+
+/* --- Tablet (Max 1024px) --- */
 @media (max-width: 1024px) {
   /* Navigation */
   .frame .div-9 {
@@ -762,15 +895,17 @@
   }
   .frame .nav-links {
     gap: 5px;
-  } /* Hero Section */
+  }
+
+  /* Hero Section */
   .frame .hero-section {
     height: 650px;
   }
   .frame .div {
-    height: 650px;
+    height: 550px; /* 650px - 100px header padding */
   }
   .frame .div-4 {
-    top: 120px;
+    top: 20px; /* 120px - 100px header padding */
     left: 30px;
     width: 450px;
     gap: 20px;
@@ -792,29 +927,33 @@
     line-height: 26px;
   }
   .frame .hero-buttons {
-    flex-wrap: wrap; /* Allow buttons to stack if needed */
-  } /* Hero Image and Stat Cards Container */
+    flex-wrap: wrap;
+  }
+
+  /* Hero Image and Stat Cards Container */
   .frame .group {
-    top: 100px;
+    top: 0px; /* 100px - 100px header padding */
     left: 500px;
     width: 500px;
     height: 500px;
     transform: scale(0.75);
-  } /* Stat Cards: move them closer and scale slightly */
+  }
+
+  /* Stat Cards: move them closer and scale slightly */
   .frame .div-2 {
-    /* NEW POSITIONING for 1024px (relative to 0.75 scaled group) */
-    top: 450px; /* Moved up from original */
-    left: 280px; /* Adjusted right */
-    transform: scale(0.9); /* Slightly scaled down */
+    top: 450px;
+    left: 280px;
+    transform: scale(0.9);
     transform-origin: bottom right;
   }
   .frame .div-6 {
-    /* NEW POSITIONING for 1024px (relative to 0.75 scaled group) */
-    top: 350px; /* Moved down slightly */
-    left: 100px; /* Adjusted left */
-    transform: scale(0.9); /* Slightly scaled down */
+    top: 350px;
+    left: 100px;
+    transform: scale(0.9);
     transform-origin: top left;
-  } /* Services Section */
+  }
+
+  /* Services Section */
   .frame .div-12 {
     gap: 30px;
   }
@@ -835,47 +974,78 @@
     font-size: 16px;
     line-height: 24px;
   }
-} /* Desktop view (hide hamburger) - Min-width rule to ensure hamburger is hidden on large screens */
+}
+
+/* Desktop view (hide hamburger) - Min-width rule to ensure hamburger is hidden on large screens */
 @media (min-width: 768px) {
   .frame .hamburger {
     display: none;
   }
-} /* --- Mobile (Max 767px) --- */
+  /* Ensure desktop nav elements are visible */
+  .frame .div-5 .nav-links,
+  .frame .div-5 .buttons-2 {
+    display: inline-flex !important;
+  }
+  /* Remove mobile classes that might override desktop styles */
+  .frame .nav-links.nav-active {
+    transform: none;
+  }
+}
+
+/* --- Mobile (Max 767px) --- */
 @media (max-width: 767px) {
   /* Navigation */
   .frame .div-9 {
     height: 80px;
     padding: 0 20px;
   }
-  .frame .nav-links,
+  .frame .hero-section {
+    padding-top: 80px; /* Account for new 80px fixed header height */
+  }
+
+  /* Hide desktop navigation and show hamburger */
+  .frame .div-5 {
+    /* Main nav container should still be flexible to hold logo and hamburger */
+    gap: 0;
+  }
+  .frame .nav-links {
+    display: none; /* Hidden by default for mobile menu implementation */
+  }
+
+  /* Use a dedicated class for the desktop button container to hide it */
   .frame .nav-quote-btn {
-    display: none; /* Hide desktop navigation links and quote button by default */
+    display: none;
   }
   .frame .hamburger {
     display: block; /* Show hamburger menu */
-  } /* Navigation: Mobile Menu Styling (Off-screen by default) */
+  }
+
+  /* Navigation: Mobile Menu Styling */
   .frame .nav-links {
-    /* Set up the mobile menu container */
     position: fixed;
     right: 0;
     top: 80px; /* Below the header */
-    height: calc(100vh - 80px); /* Full height of the viewport minus header */
-    width: 70%; /* Takes up 70% of the screen width */
+    height: calc(100vh - 80px);
+    width: 70%;
     max-width: 300px;
     background-color: #ffffff;
-    flex-direction: column; /* Stack links vertically */
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 40px 20px;
     z-index: 999;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); /* Default: hidden off-screen */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     display: flex; /* Override desktop 'display: none' */
-  } /* Active state for mobile menu */
+  }
+
+  /* Active state for mobile menu (JS will add this) */
   .frame .nav-links.nav-active {
-    transform: translateX(0); /* Slide into view */
-  } /* Mobile link styling */
+    transform: translateX(0);
+  }
+
+  /* Mobile link styling */
   .frame .div-10 {
     width: 100%;
     text-align: center;
@@ -889,21 +1059,9 @@
     color: #000;
   }
 
-  /* **************************************************** */
-  /* MODIFICATION: HIDE THE BUTTON COMPLETELY ON MOBILE */
-  /* **************************************************** */
-  /* This ensures the button, which is a sibling of .nav-links, is hidden.
-     The first rule above (.frame .nav-links, .frame .nav-quote-btn { display: none; }) 
-     hides it in the header, and this ensures it doesn't appear in the menu area. 
-     (Note: If the button were inside the UL, this rule would change.) */
-  .frame .nav-quote-btn {
-    display: none;
-  }
-  /* **************************************************** */
-
   /* Hamburger Toggle Animation */
   .frame .hamburger.toggle .hamburger-icon {
-    background: transparent; /* Middle line disappears */
+    background: transparent;
   }
   .frame .hamburger.toggle .hamburger-icon::before {
     transform: rotate(-45deg);
@@ -912,17 +1070,20 @@
   .frame .hamburger.toggle .hamburger-icon::after {
     transform: rotate(45deg);
     top: 0;
-  } /* Hero Section: Switch to a stacked, fluid layout */
+  }
+
+  /* Hero Section: Switch to a stacked, fluid layout */
   .frame .hero-section {
     height: auto;
     padding-bottom: 20px;
-    padding-top: 60px; /* Account for fixed header */
   }
   .frame .div {
     height: auto;
     min-height: 600px;
-    display: block; /* Change back to block for stacked layout */
-  } /* Hero Content (Text and Buttons) */
+    display: block;
+  }
+
+  /* Hero Content (Text and Buttons) */
   .frame .div-4 {
     position: relative;
     top: 50px;
@@ -953,30 +1114,33 @@
     line-height: 24px;
   }
   .frame .hero-buttons {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column;
     width: 100%;
   }
   .frame .buttons,
   .frame .contact-wrapper {
     width: 100%;
-    max-width: 300px; /* Optional: limit button width */
-  } /* Decorative lines - hide or adjust for cleaner mobile look */
+    max-width: 300px;
+    margin: 0 auto; /* Center buttons */
+  }
+
+  /* Decorative lines - hide */
   .frame .group-3 {
     display: none;
-  } /* Hero Image and Stat Cards Container - Positioned below text */
-  /* --- BEGIN MODIFIED BLOCK: Image Centering & Visibility --- */
+  }
+
+  /* Hero Image and Stat Cards Container - Positioned below text */
   .frame .group {
     position: relative;
     top: 0;
     left: 50%;
-    transform: translateX(-50%); /* Centering the group container */
-    width: 100%; /* Take full width of parent (div) */
-    max-width: 500px; /* Limit max size */
-    height: auto; /* Allow height to adjust based on image */
-    margin-top: 20px; /* Adjusted margin */
-    overflow: visible; /* Ensure nothing is cut off */
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+    overflow: visible;
   }
-
   .frame .group-2 {
     position: relative;
     width: 100%;
@@ -984,7 +1148,7 @@
     padding-top: 140%; /* Aspect ratio (719/506 ≈ 140%) for the image container */
   }
 
-  /* Background Ellipses/Circles - Hides large circles as requested */
+  /* Background Ellipses/Circles - Hides large circles */
   .frame .ellipse,
   .frame .ellipse-2 {
     display: none;
@@ -997,32 +1161,30 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensures the *full* image is visible (not cropped) */
+    object-fit: contain;
     transform: none;
   }
 
   /* Stat Card 260+ Resumes Created - Repositioned */
   .frame .div-2 {
     position: absolute;
-    top: 75%; /* Lower position on the image */
-    left: 80%; /* Near the right edge */
-    transform: translateX(-100%) scale(0.9); /* Center on left edge, scale down */
+    top: 75%;
+    left: 80%;
+    transform: translateX(-100%) scale(0.9);
     transform-origin: bottom right;
     max-width: 250px;
-    background-color: #ffffff; /* Ensure background opacity is solid */
+    background-color: #ffffff;
   }
 
   /* Stat Card 4.9 Rating Card - Repositioned */
   .frame .div-6 {
     position: absolute;
-    top: 25%; /* Upper position on the image */
-    left: 20%; /* Near the left edge */
-    transform: translateX(-100%) scale(0.9); /* Center on left edge, scale down */
+    top: 25%;
+    left: 20%;
+    transform: translateX(0%) scale(0.9); /* Left card, so no X-translation */
     transform-origin: top left;
     max-width: 250px;
-    /* Keeping the backdrop filter from original */
   }
-  /* --- END MODIFIED BLOCK --- */
 
   /* Services Section */
   .frame .div-12 {
@@ -1030,7 +1192,7 @@
     width: 100%;
   }
   .frame .div-14 {
-    flex-direction: column; /* Stack service cards vertically */
+    flex-direction: column;
     gap: 30px;
   }
   .frame .div-15 {
@@ -1039,10 +1201,12 @@
   }
   .frame .CMS {
     max-width: 200px;
-  } /* Curved Underline Adjustment for small screens */
+  }
+
+  /* Curved Underline Adjustment for small screens */
   .frame .curved-underline {
     padding-bottom: 30px;
-  } /* Scale the lines down */
+  }
   .frame .curved-underline::before {
     bottom: 5px;
     width: 70%;
@@ -1055,17 +1219,24 @@
     height: 40px;
     border-top-width: 2px;
   }
-} /* --- Extra Small Mobile (Max 480px) --- */
+}
+
+/* --- Extra Small Mobile (Max 480px) --- */
 @media (max-width: 480px) {
   /* Navigation */
   .frame .div-9 {
     height: 70px;
   }
+  .frame .hero-section {
+    padding-top: 70px; /* Adjust for new 70px header height */
+  }
   .frame .nav-links {
-    top: 70px; /* Adjust menu to new header height */
+    top: 70px;
     height: calc(100vh - 70px);
     width: 90%;
-  } /* Hero Content */
+  }
+
+  /* Hero Content */
   .frame .div-4 {
     top: 30px;
     width: 95%;
@@ -1083,11 +1254,12 @@
   }
   .frame .hero-buttons {
     gap: 15px;
-  } /* Hero Image and Stat Cards - further scaling/hiding */
-  /* --- BEGIN MODIFIED BLOCK: Stat Card Repositioning for smaller screens --- */
+  }
+
+  /* Hero Image and Stat Cards - further scaling/hiding */
   .frame .group {
-    max-width: 90%; /* Use 90% of screen width */
-    margin: 20px 0 0;
+    max-width: 90%;
+    margin: 20px auto 0;
   }
 
   /* Stat Card 260+ Resumes Created - Further Repositioned */
@@ -1103,7 +1275,6 @@
     left: 0%;
     transform: translateX(0%) scale(0.8);
   }
-  /* --- END MODIFIED BLOCK --- */
 
   /* Services Section */
   .frame .what-you-get {
