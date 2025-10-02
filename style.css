@@ -18,9 +18,11 @@
   margin: 0;
   padding: 0;
 }
+
 .frame .div-10[role="none"] {
   list-style: none;
 }
+
 .frame .div-wrapper[role="menuitem"] {
   text-decoration: none;
   color: inherit;
@@ -36,26 +38,32 @@
 .frame .div-wrapper[role="menuitem"]:hover {
   opacity: 0.8;
 }
+
 .frame .div-wrapper[role="menuitem"]:focus {
   outline: 2px solid #4a90e2;
   outline-offset: 2px;
 }
+
 .frame .buttons[role="button"]:hover {
   opacity: 0.9;
   transform: translateY(-1px);
 }
+
 .frame .buttons[role="button"]:focus {
   outline: 2px solid #4a90e2;
   outline-offset: 2px;
 }
+
 .frame .contact-wrapper:hover {
   opacity: 0.9;
   transform: translateY(-1px);
 }
+
 .frame .buttons-2:hover {
   opacity: 0.9;
   transform: translateY(-1px);
 }
+
 /* Improved focus states for better accessibility */
 .frame .contact-wrapper:focus,
 .frame .buttons-2:focus {
@@ -75,40 +83,37 @@
 /* 2. TYPOGRAPHY & UTILITY STYLES */
 /* ================================== */
 
-/* --- General Text Wrappers --- */
+/* --- General Text Wrappers (Uses --typography-18-medium) --- */
 .frame .text-wrapper-6 {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  /* Assuming var(--typography-18-medium-...) is defined elsewhere, using placeholders for clarity */
-  font-family: var(
-    --typography-18-medium-font-family,
-    "Figtree-Medium",
-    Helvetica
-  );
-  font-weight: var(--typography-18-medium-font-weight, 500);
+  font-family: var(--typography-18-medium-font-family);
+  font-weight: var(--typography-18-medium-font-weight);
   color: #282828;
-  font-size: var(--typography-18-medium-font-size, 18px);
-  letter-spacing: var(--typography-18-medium-letter-spacing, 0);
-  line-height: var(--typography-18-medium-line-height, normal);
-  font-style: var(--typography-18-medium-font-style, normal);
+  font-size: var(--typography-18-medium-font-size);
+  letter-spacing: var(--typography-18-medium-letter-spacing);
+  line-height: var(--typography-18-medium-line-height);
+  font-style: var(--typography-18-medium-font-style);
 }
 
-/* Hero Title Spans */
+/* Hero Title Spans - **Keeping Hardcoded for Specific Styles Not in StyleGuide** */
 .frame .span {
   color: #000000;
   line-height: 78px;
 }
+
 .frame .text-wrapper-2 {
   color: #fa1239;
   line-height: 85px;
 }
+
 .frame .text-wrapper-3 {
   color: #000000;
   line-height: 85px;
 }
 
-/* Smaller/Sub Headings */
+/* Smaller/Sub Headings - **Keeping Hardcoded/Specific Fonts Not in StyleGuide** */
 .frame .text-wrapper {
   align-self: stretch;
   font-family: "Figtree-ExtraBold", Helvetica;
@@ -120,6 +125,7 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
 .frame .online-resume {
   position: relative;
   align-self: stretch;
@@ -130,6 +136,7 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
 .frame .text-wrapper-5 {
   position: relative;
   align-self: stretch;
@@ -141,7 +148,7 @@
   line-height: normal;
 }
 
-/* Stat Card Typography */
+/* Stat Card Typography - **Keeping Hardcoded (Inter is not in StyleGuide)** */
 .frame .text-wrapper-4 {
   width: fit-content;
   font-family: "Inter-SemiBold", Helvetica;
@@ -154,27 +161,25 @@
   line-height: normal;
 }
 
-/* Services Section Paragraph/Content */
+/* Services Section Paragraph/Content (Uses --typography-20-medium) */
 .frame .p {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   align-self: stretch;
-  /* Assuming color and font vars are defined, using fallbacks */
-  font-family: var(
-    --typography-20-medium-font-family,
-    "Figtree-Medium",
-    Helvetica
-  );
-  font-weight: var(--typography-20-medium-font-weight, 500);
-  color: var(--colorpalletneutralneutral-500, #666666);
-  font-size: var(--typography-20-medium-font-size, 20px);
-  letter-spacing: var(--typography-20-medium-letter-spacing, 0);
-  line-height: var(--typography-20-medium-line-height, 30px);
-  font-style: var(--typography-20-medium-font-style, normal);
+  font-family: var(--typography-20-medium-font-family);
+  font-weight: var(--typography-20-medium-font-weight);
+  color: var(--colorpalletneutralneutral-500);
+  font-size: var(--typography-20-medium-font-size);
+  letter-spacing: var(--typography-20-medium-letter-spacing);
+  line-height: 30px;
+  /* Keeping line-height hardcoded as it differs from variable */
+  font-style: var(--typography-20-medium-font-style);
   text-align: center;
 }
+
+/* This element uses a specific regular font/size not in the StyleGuide */
 .frame .text-wrapper-7 {
   position: relative;
   display: flex;
@@ -183,33 +188,31 @@
   align-self: stretch;
   font-family: "Figtree-Regular", Helvetica;
   font-weight: 400;
-  color: var(--colorpalletneutralneutral-500, #666666);
+  color: var(--colorpalletneutralneutral-500);
   font-size: 18px;
   letter-spacing: 0;
   line-height: 30px;
   text-align: center;
 }
+
+/* Services Section Content Wrapper (Uses --typography-20-medium) */
 .frame .text-wrapper-8 {
   flex: 1;
   height: auto;
   min-height: 48px;
   margin-top: -1px;
-  /* Assuming color and font vars are defined, using fallbacks */
-  font-family: var(
-    --typography-20-medium-font-family,
-    "Figtree-Medium",
-    Helvetica
-  );
-  font-weight: var(--typography-20-medium-font-weight, 500);
-  font-size: var(--typography-20-medium-font-size, 20px);
-  line-height: var(--typography-20-medium-line-height, 30px);
+  font-family: var(--typography-20-medium-font-family);
+  font-weight: var(--typography-20-medium-font-weight);
+  font-size: var(--typography-20-medium-font-size);
+  line-height: 30px;
+  /* Keeping line-height hardcoded as it differs from variable */
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--colorpalletneutralneutral-500, #666666);
-  letter-spacing: var(--typography-20-medium-letter-spacing, 0);
-  font-style: var(--typography-20-medium-font-style, normal);
+  color: var(--colorpalletneutralneutral-500);
+  letter-spacing: var(--typography-20-medium-letter-spacing);
+  font-style: var(--typography-20-medium-font-style);
   text-align: center;
 }
 
@@ -217,28 +220,38 @@
 .frame .curved-underline {
   position: relative;
   display: inline-block;
-  padding-bottom: 40px; /* Text aur underline ke beech ka gap */
+  padding-bottom: 40px;
+  /* Text aur underline ke beech ka gap */
 }
+
 .frame .curved-underline::before,
 .frame .curved-underline::after {
   content: "";
   position: absolute;
-  left: 50%; /* Center se draw karenge */
-  transform: translateX(-50%); /* Center align */
+  left: 50%;
+  /* Center se draw karenge */
+  transform: translateX(-50%);
+  /* Center align */
   border-radius: 50%;
   border-top: 3px solid #fa1239;
   box-sizing: border-box;
 }
+
 /* First Curved Line (::before) */
 .frame .curved-underline::before {
-  bottom: 10px; /* Text se thoda niche */
-  width: 80%; /* First line chhoti */
+  bottom: 10px;
+  /* Text se thoda niche */
+  width: 80%;
+  /* First line chhoti */
   height: 40px;
 }
+
 /* Second Curved Line (::after) */
 .frame .curved-underline::after {
-  bottom: -18px; /* Pehle wale se aur niche */
-  width: 100%; /* Second line badi */
+  bottom: -18px;
+  /* Pehle wale se aur niche */
+  width: 100%;
+  /* Second line badi */
   height: 60px;
 }
 
@@ -259,6 +272,7 @@
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .frame .div-9 {
   display: flex;
   height: 100px;
@@ -268,7 +282,8 @@
   position: relative;
   align-self: stretch;
   width: 100%;
-  box-sizing: border-box; /* Added for correct padding behavior */
+  box-sizing: border-box;
+  /* Added for correct padding behavior */
 }
 
 /* --- Logo --- */
@@ -287,9 +302,12 @@
   position: relative;
   flex: 0 0 auto;
 }
+
 .frame .nav-links {
-  gap: 10px; /* Tighter gap for navigation links */
+  gap: 10px;
+  /* Tighter gap for navigation links */
 }
+
 .frame .div-10 {
   display: inline-flex;
   align-items: center;
@@ -311,15 +329,9 @@
   padding: 14px 22px;
   position: relative;
   flex: 0 0 auto;
-  background-color: var(
-    --colorpalletprimaryprimary-500,
-    #fa1239
-  ); /* Fallback color */
+  background-color: var(--colorpalletprimaryprimary-500);
   border-radius: 30px;
-  box-shadow: var(
-    --button-shadow,
-    0 4px 6px rgba(0, 0, 0, 0.1)
-  ); /* Fallback shadow */
+  box-shadow: var(--button-shadow);
   cursor: pointer;
 }
 
@@ -329,8 +341,10 @@
   all: unset;
   cursor: pointer;
   padding: 10px;
-  box-sizing: content-box; /* Ensure padding doesn't affect icon size */
+  box-sizing: content-box;
+  /* Ensure padding doesn't affect icon size */
 }
+
 .frame .hamburger-icon {
   display: block;
   width: 25px;
@@ -339,6 +353,7 @@
   position: relative;
   transition: background 0.3s ease;
 }
+
 .frame .hamburger-icon::before,
 .frame .hamburger-icon::after {
   content: "";
@@ -350,9 +365,11 @@
   left: 0;
   transition: transform 0.3s ease, top 0.3s ease;
 }
+
 .frame .hamburger-icon::before {
   top: -8px;
 }
+
 .frame .hamburger-icon::after {
   top: 8px;
 }
@@ -370,17 +387,18 @@
   position: relative;
   align-self: stretch;
   width: 100%;
-  padding-top: 100px; /* To account for fixed header height (100px) */
+  padding-top: 100px;
+  /* To account for fixed header height (100px) */
   box-sizing: border-box;
 }
+
 .frame .div {
   overflow: hidden;
-  background: linear-gradient(
-    261deg,
-    rgba(255, 231, 235, 1) 0%,
-    rgba(255, 191, 202, 1) 100%
-  );
-  height: 809px; /* 909px - 100px header padding */
+  background: linear-gradient(261deg,
+      rgba(255, 231, 235, 1) 0%,
+      rgba(255, 191, 202, 1) 100%);
+  height: 809px;
+  /* 909px - 100px header padding */
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -396,31 +414,32 @@
   gap: 38px;
   position: absolute;
   /* top is relative to the inner .div (809px height) */
-  top: 128px; /* 228px - 100px header padding */
+  top: 128px;
+  /* 228px - 100px header padding */
   left: 100px;
   z-index: 3;
 }
 
-/* Hero Title */
+/* Hero Title - **Keeping Hardcoded (Specific Bold Font Not in StyleGuide)** */
 .frame .your-resume-deserves {
   position: relative;
   align-self: stretch;
   margin-top: -1px;
   font-family: "Figtree-Bold", Helvetica;
   font-weight: 700;
-  color: var(--colorpalletneutralneutral-500, #000000); /* Fallback color */
+  color: var(--colorpalletneutralneutral-500);
   font-size: 50px;
   letter-spacing: 0;
   line-height: 64px;
 }
 
-/* Hero Subtext */
+/* Hero Subtext - **Keeping Hardcoded (Specific Regular Font Not in StyleGuide)** */
 .frame .if-your-resume-isn-t {
   position: relative;
   width: 485px;
   font-family: "Figtree-Regular", Helvetica;
   font-weight: 400;
-  color: var(--colorpalletneutralneutral-500, #666666); /* Fallback color */
+  color: var(--colorpalletneutralneutral-500);
   font-size: 16px;
   letter-spacing: 0;
   line-height: 34px;
@@ -445,26 +464,25 @@
   background-color: #ffffff;
   border-radius: 30px;
   border: 1px solid;
-  border-color: var(
-    --colorpalletprimaryprimary-500,
-    #fa1239
-  ); /* Fallback color */
-  box-shadow: var(--button-shadow, 0 4px 6px rgba(0, 0, 0, 0.1));
+  border-color: var(--colorpalletprimaryprimary-500);
+  box-shadow: var(--button-shadow);
   cursor: pointer;
   text-decoration: none;
   box-sizing: border-box;
 }
+
+/* Primary Button Text (Uses --typography-18-medium) */
 .frame .contact {
   position: relative;
   width: fit-content;
   margin-top: -3px;
   margin-bottom: -1px;
-  font-family: "Figtree-Medium", Helvetica;
-  font-weight: 500;
-  color: var(--colorpalletprimaryprimary-500, #fa1239); /* Fallback color */
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
+  font-family: var(--typography-18-medium-font-family);
+  font-weight: var(--typography-18-medium-font-weight);
+  color: var(--colorpalletprimaryprimary-500);
+  font-size: var(--typography-18-medium-font-size);
+  letter-spacing: var(--typography-18-medium-letter-spacing);
+  line-height: var(--typography-18-medium-line-height);
 }
 
 /* Secondary Button (Pink/Filled) - Height increased to 60px */
@@ -479,35 +497,36 @@
   padding: 18px 22px;
   position: relative;
   flex: 0 0 auto;
-  background-color: var(
-    --colorpalletprimaryprimary-500,
-    #fa1239
-  ); /* Fallback color */
+  background-color: var(--colorpalletprimaryprimary-500);
   border-radius: 30px;
-  box-shadow: var(--button-shadow, 0 4px 6px rgba(0, 0, 0, 0.1));
+  box-shadow: var(--button-shadow);
   cursor: pointer;
 }
+
+/* Secondary Button Text (Uses --typography-18-medium) */
 .frame .contact-2 {
   position: relative;
   width: fit-content;
   margin-top: -3px;
   margin-bottom: -1px;
-  font-family: "Figtree-Medium", Helvetica;
-  font-weight: 500;
+  font-family: var(--typography-18-medium-font-family);
+  font-weight: var(--typography-18-medium-font-weight);
   color: #ffffff;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
+  font-size: var(--typography-18-medium-font-size);
+  letter-spacing: var(--typography-18-medium-letter-spacing);
+  line-height: var(--typography-18-medium-line-height);
 }
 
 /* Decorative lines */
 .frame .group-3 {
   position: absolute;
-  top: 53px; /* 153px - 100px header padding */
+  top: 53px;
+  /* 153px - 100px header padding */
   left: 0;
   width: 363px;
   height: 17px;
 }
+
 .frame .vector {
   position: absolute;
   top: -1px;
@@ -515,6 +534,7 @@
   width: 269px;
   height: 9px;
 }
+
 .frame .img {
   position: absolute;
   top: 7px;
@@ -527,12 +547,14 @@
 .frame .group {
   position: absolute;
   /* top is relative to the inner .div (809px height) */
-  top: 90px; /* 190px - 100px header padding */
+  top: 90px;
+  /* 190px - 100px header padding */
   left: 766px;
   width: 634px;
   height: 727px;
   z-index: 1;
 }
+
 .frame .group-2 {
   position: absolute;
   top: 0;
@@ -548,25 +570,22 @@
   width: 634px;
   height: 634px;
   border-radius: 316.94px;
-  background: radial-gradient(
-    50% 50% at 55% 50%,
-    rgba(255, 228, 233, 1) 0%,
-    rgba(255, 191, 202, 1) 100%
-  );
+  background: radial-gradient(50% 50% at 55% 50%,
+      rgba(255, 228, 233, 1) 0%,
+      rgba(255, 191, 202, 1) 100%);
   position: absolute;
   aspect-ratio: 1;
 }
+
 .frame .ellipse-2 {
   top: 172px;
   left: 79px;
   width: 476px;
   height: 476px;
   border-radius: 238.22px;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(254, 205, 213, 1) 0%,
-    rgba(255, 226, 231, 1) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%,
+      rgba(254, 205, 213, 1) 0%,
+      rgba(255, 226, 231, 1) 100%);
   position: absolute;
   aspect-ratio: 1;
 }
@@ -596,8 +615,10 @@
   background-color: #ffffff;
   border-radius: 10px;
   z-index: 2;
-  box-sizing: border-box; /* Added for correct padding behavior */
+  box-sizing: border-box;
+  /* Added for correct padding behavior */
 }
+
 .frame .mask-group {
   position: relative;
   width: 80px;
@@ -606,6 +627,7 @@
   margin-bottom: -3.29px;
   margin-left: -6.67px;
 }
+
 .frame .div-3 {
   display: flex;
   flex-direction: column;
@@ -632,8 +654,10 @@
   backdrop-filter: blur(45.5px) brightness(100%);
   -webkit-backdrop-filter: blur(45.5px) brightness(100%);
   z-index: 2;
-  box-sizing: border-box; /* Added for correct padding behavior */
+  box-sizing: border-box;
+  /* Added for correct padding behavior */
 }
+
 .frame .div-7 {
   display: flex;
   flex-direction: column;
@@ -642,6 +666,7 @@
   gap: 11px;
   position: relative;
 }
+
 .frame .div-8 {
   display: inline-flex;
   align-items: center;
@@ -649,6 +674,7 @@
   position: relative;
   flex: 0 0 auto;
 }
+
 .frame .vector-2 {
   position: relative;
   width: 17.12px;
@@ -707,6 +733,7 @@
   position: relative;
   flex: 0 0 auto;
 }
+
 .frame .div-wrapper-2 {
   display: flex;
   flex-direction: column;
@@ -717,6 +744,8 @@
   width: 100%;
   flex: 0 0 auto;
 }
+
+/* Chip Text (Uses --typography-18-medium) - Reverted to medium for consistency */
 .frame .what-you-get {
   position: relative;
   display: flex;
@@ -724,16 +753,19 @@
   justify-content: center;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Figtree-SemiBold", Helvetica;
-  font-weight: 600;
+  font-family: var(--typography-18-medium-font-family);
+  font-weight: var(--typography-18-medium-font-weight);
   color: #000000;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
+  font-size: var(--typography-18-medium-font-size);
+  letter-spacing: var(--typography-18-medium-letter-spacing);
+  line-height: var(--typography-18-medium-line-height);
+  font-style: var(--typography-18-medium-font-style);
   background-color: #fd92a44c;
   border-radius: 6px;
   padding: 10px 20px;
 }
+
+/* Section Title (Uses --typography-h4-26-semibold) */
 .frame .you-re-not-just {
   position: relative;
   display: flex;
@@ -741,19 +773,14 @@
   justify-content: center;
   align-self: stretch;
   margin-top: -1px;
-  /* Assuming font vars are defined, using fallbacks */
-  font-family: var(
-    --typography-h4-26-semibold-font-family,
-    "Figtree-SemiBold",
-    Helvetica
-  );
-  font-weight: var(--typography-h4-26-semibold-font-weight, 600);
+  font-family: var(--typography-h4-26-semibold-font-family);
+  font-weight: var(--typography-h4-26-semibold-font-weight);
   color: #000000;
-  font-size: var(--typography-h4-26-semibold-font-size, 26px);
+  font-size: var(--typography-h4-26-semibold-font-size);
   text-align: center;
-  letter-spacing: var(--typography-h4-26-semibold-letter-spacing, 0);
-  line-height: var(--typography-h4-26-semibold-line-height, normal);
-  font-style: var(--typography-h4-26-semibold-font-style, normal);
+  letter-spacing: var(--typography-h4-26-semibold-letter-spacing);
+  line-height: var(--typography-h4-26-semibold-line-height);
+  font-style: var(--typography-h4-26-semibold-font-style);
 }
 
 /* --- Service Cards Row */
@@ -783,6 +810,7 @@
   box-shadow: 0px 4px 16px #00000014;
   box-sizing: border-box;
 }
+
 .frame .div-16 {
   display: flex;
   flex-direction: column;
@@ -804,6 +832,7 @@
   object-fit: contain;
   margin: 0;
 }
+
 .frame .div-wrapper-3 {
   display: flex;
   align-items: flex-start;
@@ -821,6 +850,7 @@
 
 /* --- Tablet / Small Desktop (Max 1280px) --- */
 @media (max-width: 1280px) {
+
   /* Navigation */
   .frame .div-9 {
     padding: 0px 50px;
@@ -830,26 +860,34 @@
   .frame .hero-section {
     height: 750px;
   }
+
   .frame .div {
-    height: 650px; /* 750px - 100px header padding */
+    height: 650px;
+    /* 750px - 100px header padding */
   }
+
   .frame .div-4 {
-    top: 50px; /* 150px - 100px header padding */
+    top: 50px;
+    /* 150px - 100px header padding */
     left: 50px;
     width: 500px;
     gap: 25px;
   }
+
   .frame .your-resume-deserves {
     font-size: 50px;
     line-height: 55px;
   }
+
   .frame .span {
     line-height: 60px;
   }
+
   .frame .text-wrapper-2,
   .frame .text-wrapper-3 {
     line-height: 65px;
   }
+
   .frame .if-your-resume-isn-t {
     width: 450px;
     font-size: 15px;
@@ -858,7 +896,8 @@
 
   /* Hero Image and Ellipses Container */
   .frame .group {
-    top: 0px; /* 100px - 100px header padding */
+    top: 0px;
+    /* 100px - 100px header padding */
     left: 550px;
     width: 600px;
     height: 600px;
@@ -871,6 +910,7 @@
     top: 560px;
     left: 330px;
   }
+
   .frame .div-6 {
     top: 380px;
     left: 120px;
@@ -885,14 +925,17 @@
 
 /* --- Tablet (Max 1024px) --- */
 @media (max-width: 1024px) {
+
   /* Navigation */
   .frame .div-9 {
     padding: 0px 30px;
   }
+
   .frame .group-4 {
     width: 180px;
     height: 45px;
   }
+
   .frame .nav-links {
     gap: 5px;
   }
@@ -901,38 +944,48 @@
   .frame .hero-section {
     height: 650px;
   }
+
   .frame .div {
-    height: 550px; /* 650px - 100px header padding */
+    height: 550px;
+    /* 650px - 100px header padding */
   }
+
   .frame .div-4 {
-    top: 20px; /* 120px - 100px header padding */
+    top: 20px;
+    /* 120px - 100px header padding */
     left: 30px;
     width: 450px;
     gap: 20px;
   }
+
   .frame .your-resume-deserves {
     font-size: 44px;
     line-height: 50px;
   }
+
   .frame .span {
     line-height: 55px;
   }
+
   .frame .text-wrapper-2,
   .frame .text-wrapper-3 {
     line-height: 60px;
   }
+
   .frame .if-your-resume-isn-t {
     width: 100%;
     font-size: 14px;
     line-height: 26px;
   }
+
   .frame .hero-buttons {
     flex-wrap: wrap;
   }
 
   /* Hero Image and Stat Cards Container */
   .frame .group {
-    top: 0px; /* 100px - 100px header padding */
+    top: 0px;
+    /* 100px - 100px header padding */
     left: 500px;
     width: 500px;
     height: 500px;
@@ -946,6 +999,7 @@
     transform: scale(0.9);
     transform-origin: bottom right;
   }
+
   .frame .div-6 {
     top: 350px;
     left: 100px;
@@ -957,19 +1011,28 @@
   .frame .div-12 {
     gap: 30px;
   }
+
   .frame .div-14 {
     gap: 15px;
   }
+
   .frame .div-15 {
     min-height: 400px;
   }
+
+  /* Section Title (Uses variable, no change needed here) */
   .frame .you-re-not-just {
     font-size: 22px;
+    /* Hardcoding for this breakpoint is necessary */
   }
+
+  /* Paragraphs/Content (Uses variable, no change needed here) */
   .frame .p,
   .frame .text-wrapper-8 {
     font-size: 18px;
+    /* Hardcoding for this breakpoint is necessary */
   }
+
   .frame .text-wrapper-7 {
     font-size: 16px;
     line-height: 24px;
@@ -981,11 +1044,13 @@
   .frame .hamburger {
     display: none;
   }
+
   /* Ensure desktop nav elements are visible */
   .frame .div-5 .nav-links,
   .frame .div-5 .buttons-2 {
     display: inline-flex !important;
   }
+
   /* Remove mobile classes that might override desktop styles */
   .frame .nav-links.nav-active {
     transform: none;
@@ -994,13 +1059,16 @@
 
 /* --- Mobile (Max 767px) --- */
 @media (max-width: 767px) {
+
   /* Navigation */
   .frame .div-9 {
     height: 80px;
     padding: 0 20px;
   }
+
   .frame .hero-section {
-    padding-top: 80px; /* Account for new 80px fixed header height */
+    padding-top: 80px;
+    /* Account for new 80px fixed header height */
   }
 
   /* Hide desktop navigation and show hamburger */
@@ -1008,23 +1076,28 @@
     /* Main nav container should still be flexible to hold logo and hamburger */
     gap: 0;
   }
+
   .frame .nav-links {
-    display: none; /* Hidden by default for mobile menu implementation */
+    display: none;
+    /* Hidden by default for mobile menu implementation */
   }
 
   /* Use a dedicated class for the desktop button container to hide it */
   .frame .nav-quote-btn {
     display: none;
   }
+
   .frame .hamburger {
-    display: block; /* Show hamburger menu */
+    display: block;
+    /* Show hamburger menu */
   }
 
   /* Navigation: Mobile Menu Styling */
   .frame .nav-links {
     position: fixed;
     right: 0;
-    top: 80px; /* Below the header */
+    top: 80px;
+    /* Below the header */
     height: calc(100vh - 80px);
     width: 70%;
     max-width: 300px;
@@ -1037,7 +1110,8 @@
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
-    display: flex; /* Override desktop 'display: none' */
+    display: flex;
+    /* Override desktop 'display: none' */
   }
 
   /* Active state for mobile menu (JS will add this) */
@@ -1051,11 +1125,15 @@
     text-align: center;
     padding: 15px 0;
   }
+
   .frame .div-wrapper {
     width: 100%;
   }
+
   .frame .text-wrapper-6 {
+    /* Uses --typography-18-medium, but with a different size/color for mobile nav */
     font-size: 20px;
+    /* Hardcoding for mobile nav clarity */
     color: #000;
   }
 
@@ -1063,10 +1141,12 @@
   .frame .hamburger.toggle .hamburger-icon {
     background: transparent;
   }
+
   .frame .hamburger.toggle .hamburger-icon::before {
     transform: rotate(-45deg);
     top: 0;
   }
+
   .frame .hamburger.toggle .hamburger-icon::after {
     transform: rotate(45deg);
     top: 0;
@@ -1077,6 +1157,7 @@
     height: auto;
     padding-bottom: 20px;
   }
+
   .frame .div {
     height: auto;
     min-height: 600px;
@@ -1095,33 +1176,40 @@
     text-align: center;
     padding-bottom: 20px;
   }
+
   .frame .your-resume-deserves {
     font-size: 38px;
     line-height: 44px;
     text-align: center;
   }
+
   .frame .span {
     line-height: 48px;
   }
+
   .frame .text-wrapper-2,
   .frame .text-wrapper-3 {
     line-height: 50px;
   }
+
   .frame .if-your-resume-isn-t {
     width: 100%;
     text-align: center;
     font-size: 14px;
     line-height: 24px;
   }
+
   .frame .hero-buttons {
     flex-direction: column;
     width: 100%;
   }
+
   .frame .buttons,
   .frame .contact-wrapper {
     width: 100%;
     max-width: 300px;
-    margin: 0 auto; /* Center buttons */
+    margin: 0 auto;
+    /* Center buttons */
   }
 
   /* Decorative lines - hide */
@@ -1129,23 +1217,27 @@
     display: none;
   }
 
-  /* Hero Image and Stat Cards Container - Positioned below text */
+  /* Hero Image and Stat Cards Container - Positioned below text and centered */
   .frame .group {
     position: relative;
     top: 0;
     left: 50%;
+    /* Center the group */
     transform: translateX(-50%);
+    /* Adjust for centering */
     width: 100%;
     max-width: 500px;
     height: auto;
     margin-top: 20px;
     overflow: visible;
   }
+
   .frame .group-2 {
     position: relative;
     width: 100%;
     height: 0;
-    padding-top: 140%; /* Aspect ratio (719/506 ≈ 140%) for the image container */
+    padding-top: 140%;
+    /* Aspect ratio (719/506 ≈ 140%) for the image container */
   }
 
   /* Background Ellipses/Circles - Hides large circles */
@@ -1158,11 +1250,13 @@
   .frame .portrait-happy-young {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    /* Center the image */
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transform: none;
+    transform: translateX(-50%);
+    /* Adjust for centering */
   }
 
   /* Stat Card 260+ Resumes Created - Repositioned */
@@ -1181,7 +1275,8 @@
     position: absolute;
     top: 25%;
     left: 20%;
-    transform: translateX(0%) scale(0.9); /* Left card, so no X-translation */
+    transform: translateX(0%) scale(0.9);
+    /* Left card, so no X-translation */
     transform-origin: top left;
     max-width: 250px;
   }
@@ -1191,14 +1286,17 @@
     padding: 0 10px;
     width: 100%;
   }
+
   .frame .div-14 {
     flex-direction: column;
     gap: 30px;
   }
+
   .frame .div-15 {
     min-height: auto;
     padding: 30px 20px;
   }
+
   .frame .CMS {
     max-width: 200px;
   }
@@ -1207,12 +1305,14 @@
   .frame .curved-underline {
     padding-bottom: 30px;
   }
+
   .frame .curved-underline::before {
     bottom: 5px;
     width: 70%;
     height: 30px;
     border-top-width: 2px;
   }
+
   .frame .curved-underline::after {
     bottom: -10px;
     width: 90%;
@@ -1223,13 +1323,17 @@
 
 /* --- Extra Small Mobile (Max 480px) --- */
 @media (max-width: 480px) {
+
   /* Navigation */
   .frame .div-9 {
     height: 70px;
   }
+
   .frame .hero-section {
-    padding-top: 70px; /* Adjust for new 70px header height */
+    padding-top: 70px;
+    /* Adjust for new 70px header height */
   }
+
   .frame .nav-links {
     top: 70px;
     height: calc(100vh - 70px);
@@ -1241,17 +1345,21 @@
     top: 30px;
     width: 95%;
   }
+
   .frame .your-resume-deserves {
     font-size: 32px;
     line-height: 38px;
   }
+
   .frame .span {
     line-height: 40px;
   }
+
   .frame .text-wrapper-2,
   .frame .text-wrapper-3 {
     line-height: 42px;
   }
+
   .frame .hero-buttons {
     gap: 15px;
   }
@@ -1260,10 +1368,15 @@
   .frame .group {
     max-width: 90%;
     margin: 20px auto 0;
+    left: 50%;
+    /* Ensure centering */
+    transform: translateX(-50%);
+    /* Ensure centering */
   }
 
   /* Stat Card 260+ Resumes Created - Further Repositioned */
   .frame .div-2 {
+    position: absolute;
     top: 70%;
     left: 100%;
     transform: translateX(-100%) scale(0.8);
@@ -1271,6 +1384,7 @@
 
   /* Stat Card 4.9 Rating Card - Further Repositioned */
   .frame .div-6 {
+    position: absolute;
     top: 40%;
     left: 0%;
     transform: translateX(0%) scale(0.8);
@@ -1279,10 +1393,13 @@
   /* Services Section */
   .frame .what-you-get {
     font-size: 16px;
+    /* Hardcoding for this breakpoint is necessary */
     padding: 8px 15px;
   }
+
   .frame .you-re-not-just {
     font-size: 20px;
+    /* Hardcoding for this breakpoint is necessary */
     line-height: 28px;
   }
 }
